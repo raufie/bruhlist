@@ -56,7 +56,7 @@ export default function Home() {
     try{
       const provider = await getProviderOrSigner()
       const whitelistContract = new Contract(contractAddress, abi, provider)
-      const numListed =await whitelistContract.addressesWhitelisted();
+      const numListed =await whitelistContract.numAddressesWhitelisted();
       setNumberOfWhitelisted(numListed.toNumber())
     }catch(e){
       console.log(e)
@@ -97,7 +97,7 @@ export default function Home() {
               <CircularProgress />
             </Button>
           }else{
-            return <Button variant="contained" color="secondary" onClick={addAddressToWhitelist}>Join Waitlist</Button>
+            return <Button variant="contained" color="secondary" onClick={addAddressToWhitelist}>Join Whitelist</Button>
 
           }
         }else{
