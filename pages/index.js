@@ -8,7 +8,7 @@ import {providers, Contract} from 'ethers'
 import Web3Modal from 'web3modal'
 import {contractAddress, abi} from '../constants'
 import {Button, CircularProgress, Typography} from "@material-ui/core"
-import {useStyles} from './home_styles'
+import {useStyles} from '../components/home_styles'
 import {Grid,} from "@material-ui/core"
 export default function Home() {
   
