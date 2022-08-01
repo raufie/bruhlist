@@ -127,7 +127,7 @@ export default function Home() {
           <Grid item md={6}>
             <div className={myStyles.profileDiv}>
               <h2>Welcome to Bruh Devs</h2>
-              <p>Join the waitlist bruh, wht ya waitin for</p>
+              <p>Join the whitelist bruh, wht ya waitin for</p>
               <p><b>{numberOfWhitelisted}</b> devs are already in bruh devs</p>
               {
                 !loading? 
